@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PujanSeva | Book Your Pujan Online</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Background effects -->
+    <div class="background-glow"></div>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <a href="#home" class="brand">
+            <div class="brand-icon">ॐ</div>
+
+            <div class="brand-text">
+                <h1>PujanSeva</h1>
+                <p>Bhakti • Shraddha • Seva</p>
+            </div>
+        </a>
+
+        <nav class="navbar">
+            <a href="#home" class="active" data-en="Home" data-hi="होम">Home</a>
+            <a href="#pujans" data-en="Our Pujans" data-hi="हमारी पूजाएँ">Our Pujans</a>
+            <a href="#about" data-en="About" data-hi="हमारे बारे में">About</a>
+            <a href="#gallery" data-en="Gallery" data-hi="गैलरी">Gallery</a>
+            <a href="#testimonials" data-en="Testimonials" data-hi="प्रतिक्रियाएँ">Testimonials</a>
+            <a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a>
+        </nav>
+
+        <div class="header-right">
+            <button class="language-button" id="languageButton">
+                <span>◎</span>
+                <span id="languageText">English</span>
+                <span>⌄</span>
+            </button>
+
+            <button class="language-hindi" id="hindiButton">हिन्दी</button>
+
+            <button class="menu-button" id="menuButton">☰</button>
+        </div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-label">
+                    <span>🪷</span>
+                    <span data-en="Online Pujan Booking"
+                          data-hi="ऑनलाइन पूजन बुकिंग">
+                        Online Pujan Booking
+                    </span>
+                </div>
+
+                <h2>
+                    <span data-en="Book Your" data-hi="अपनी पूजा">Book Your</span>
+                    <span class="gold-text"
+                          data-en="Pujan Online"
+                          data-hi="ऑनलाइन बुक करें">
+                        Pujan Online
+                    </span>
+                </h2>
+
+                <p class="hero-description"
+                   data-en="Bringing the divine blessings to your home..."
+                   data-hi="दिव्य आशीर्वाद अब आपके घर तक...">
+                    Bringing the divine blessings to your home...
+                </p>
+
+                <div class="trust-row">
+
+                    <div class="trust-item">
+                        <span class="trust-icon">♧</span>
+                        <p data-en="Trusted<br>Pandit Ji"
+                           data-hi="विश्वसनीय<br>पंडित जी">
+                            Trusted<br>Pandit Ji
+                        </p>
+                    </div>
+
+                    <div class="trust-item">
+                        <span class="trust-icon">ϟ</span>
+                        <p data-en="Easy<br>Booking"
+                           data-hi="आसान<br>बुकिंग">
+                            Easy<br>Booking
+                        </p>
+                    </div>
+
+                    <div class="trust-item">
+                        <span class="trust-icon">♙</span>
+                        <p data-en="Secure<br>Payments"
+                           data-hi="सुरक्षित<br>भुगतान">
+                            Secure<br>Payments
+                        </p>
+                    </div>
+
+                    <div class="trust-item">
+                        <span class="trust-icon">♡</span>
+                        <p data-en="Divine<br>Experience"
+                           data-hi="दिव्य<br>अनुभव">
+                            Divine<br>Experience
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="hero-buttons">
+
+                    <a href="#booking" class="primary-button">
+                        <span data-en="Book Now" data-hi="अभी बुक करें">Book Now</span>
+                        <span>→</span>
+                    </a>
+
+                    <a href="#about" class="secondary-button">
+                        <span>▶</span>
+                        <span data-en="Watch Video" data-hi="वीडियो देखें">Watch Video</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK BOOKING -->
+            <div class="quick-book" id="booking">
+
+                <div class="booking-decoration">🪷</div>
+
+                <h3 data-en="Quick Book" data-hi="त्वरित बुकिंग">
+                    Quick Book
+                </h3>
+
+                <form id="bookingForm">
+
+                    <div class="form-control">
+                        <span>♙</span>
+
+                        <select id="pujanSelect" required>
+                            <option value="" data-en="Select Pujan" data-hi="पूजा चुनें">
+                                Select Pujan
+                            </option>
+                            <option value="Satyanarayan Pujan">Satyanarayan Pujan</option>
+                            <option value="Grah Pravesh Pujan">Grah Pravesh Pujan</option>
+                            <option value="Mangal Dosh Shanti">Mangal Dosh Shanti</option>
+                            <option value="Navdurga Pujan">Navdurga Pujan</option>
+                            <option value="Vastu Pujan">Vastu Pujan</option>
+                        </select>
+                    </div>
+
+                    <div class="form-control">
+                        <span>▦</span>
+                        <input type="date" id="bookingDate" required>
+                    </div>
+
+                    <div class="form-control">
+                        <span>◷</span>
+                        <select id="bookingTime" required>
+                            <option value="">Choose Time</option>
+                            <option>Morning (6 AM - 9 AM)</option>
+                            <option>Morning (9 AM - 12 PM)</option>
+                            <option>Afternoon (12 PM - 3 PM)</option>
+                            <option>Evening (4 PM - 7 PM)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="proceed-button">
+                        <span data-en="Proceed" data-hi="आगे बढ़ें">Proceed</span>
+                        →
+                    </button>
+
+                </form>
+
+                <p class="booking-note">
+                    ✦ Secure booking • Personal assistance
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PUJAN CARDS -->
+        <section class="pujans-section" id="pujans">
+
+            <div class="section-heading">
+                <span></span>
+                <h2 data-en="Explore Our Pujans"
+                    data-hi="हमारी पूजाएँ देखें">
+                    Explore Our Pujans
+                </h2>
+                <span></span>
+            </div>
+
+            <div class="pujan-grid">
+
+                <a href="#booking" class="pujan-card card-one">
+                    <div class="card-image"></div>
+                    <div class="card-info">
+                        <h3>Satyanarayan Pujan</h3>
+                        <p>Book Now →</p>
+                    </div>
+                </a>
+
+                <a href="#booking" class="pujan-card card-two">
+                    <div class="card-image"></div>
+                    <div class="card-info">
+                        <h3>Grah Pravesh Pujan</h3>
+                        <p>Book Now →</p>
+                    </div>
+                </a>
+
+                <a href="#booking" class="pujan-card card-three">
+                    <div class="card-image"></div>
+                    <div class="card-info">
+                        <h3>Mangal Dosh Shanti</h3>
+                        <p>Book Now →</p>
+                    </div>
+                </a>
+
+                <a href="#booking" class="pujan-card card-four">
+                    <div class="card-image"></div>
+                    <div class="card-info">
+                        <h3>Navdurga Pujan</h3>
+                        <p>Book Now →</p>
+                    </div>
+                </a>
+
+                <a href="#booking" class="pujan-card card-five">
+                    <div class="card-image"></div>
+                    <div class="card-info">
+                        <h3>Vastu Pujan</h3>
+                        <p>Book Now →</p>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <p>ॐ PujanSeva • Bhakti • Shraddha • Seva</p>
+        <p>Bringing traditions closer to your home.</p>
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
