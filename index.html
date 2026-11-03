@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100805"><meta name="description" content="पूजनसेवा — श्री सत्यनारायण कथा एवं पूजा के लिए ऑनलाइन बुकिंग।">
+<title>पूजनसेवा | दिव्य पूजा बुकिंग</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#f7bd43;--gold2:#ffe08a;--ink:#100805;--cream:#fff4d9;--muted:#d2bda0;--line:rgba(245,183,62,.35)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#100805;color:var(--cream);font-family:'Noto Serif Devanagari',serif}button,input,select,textarea{font:inherit}a{color:inherit;text-decoration:none}
+.page{min-height:100vh;position:relative;overflow:hidden;background:radial-gradient(ellipse at 68% 30%,#7c2d13 0,#35140c 28%,#160a07 61%,#0b0605 100%)}
+.page:before{content:"";position:absolute;inset:0;opacity:.17;pointer-events:none;background-image:radial-gradient(#f8c35a 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(90deg,#000,transparent 78%)}
+.topbar{height:88px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,6vw,92px);border-bottom:1px solid rgba(255,198,79,.25);background:rgba(8,5,4,.72);backdrop-filter:blur(14px);position:relative;z-index:5}
+.brand{display:flex;align-items:center;gap:14px}.brand-mark{width:62px;height:62px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font-size:36px;box-shadow:0 0 22px #e99a2444,inset 0 0 18px #e99a2433}.brand-name{font-size:30px;line-height:1;color:var(--gold2);font-weight:700}.brand-tag{font-size:12px;letter-spacing:1.8px;color:#e5bd72;margin-top:7px}
+.nav{display:flex;gap:clamp(18px,3vw,48px);align-items:center;color:#f7e8cf;font-size:15px}.nav a{padding:12px 0;transition:.2s}.nav a:hover,.nav a.active{color:var(--gold2)}.nav a.active{border-bottom:2px solid var(--gold)}
+.nav-cta{border:1px solid var(--line);border-radius:30px;padding:11px 20px;color:var(--gold2);background:#160d08}
+.hero{position:relative;z-index:1;min-height:580px;display:grid;grid-template-columns:1.02fr 1.2fr .76fr;align-items:center;gap:10px;padding:42px clamp(22px,6.5vw,108px) 0}
+.hero-copy{position:relative;z-index:2;padding:12px 0 30px}.eyebrow{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:30px;padding:9px 17px;color:var(--gold2);font-size:14px;background:#170d09aa}.eyebrow span{font-size:18px}
+h1{font-size:clamp(42px,5.3vw,76px);line-height:1.12;margin:22px 0 14px;letter-spacing:-1.8px;color:#fff9ec;font-weight:700}h1 em{display:block;color:var(--gold);font-style:normal;font-size:1.08em;text-shadow:0 4px 30px #ffad2655}.sub{font-size:18px;color:#e4d1b4;line-height:1.8;max-width:450px}
+.trust{display:flex;gap:22px;margin:28px 0 30px}.trust-item{width:88px;text-align:center;color:#e7d4b6;font-size:12px;line-height:1.5}.trust-icon{width:45px;height:45px;margin:0 auto 8px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:21px;box-shadow:0 0 18px #f5ad2a22}
+.actions{display:flex;gap:14px;flex-wrap:wrap}.btn{border:0;border-radius:40px;padding:14px 25px;font-weight:700;cursor:pointer;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px)}.btn-gold{color:#281405;background:linear-gradient(135deg,#ffe17b,#f7a91b);box-shadow:0 7px 28px #f5a51c55}.btn-outline{color:#fff4d9;border:1px solid #d8ad59;background:#120a07}
+.art{height:560px;position:relative;display:grid;place-items:center;isolation:isolate}.halo{position:absolute;width:min(39vw,490px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#ffd98b 0,#f79b37 24%,#a63a16 46%,#44130c 68%,transparent 72%);filter:blur(1px);opacity:.95;z-index:-2}.mandala{position:absolute;width:min(44vw,530px);aspect-ratio:1;border:2px solid #ffce68aa;border-radius:50%;box-shadow:0 0 40px #ffb43d66,inset 0 0 40px #ffb43d44;z-index:-1}.mandala:before,.mandala:after{content:"";position:absolute;inset:22px;border:1px dashed #ffdc8c99;border-radius:50%}.mandala:after{inset:48px;border-style:solid;transform:rotate(45deg);border-radius:44%}
+.ganesh{width:min(37vw,430px);height:auto;filter:drop-shadow(0 18px 35px #ff9d2a66);animation:float 6s ease-in-out infinite}.spark{position:absolute;color:#ffd46c;font-size:23px;text-shadow:0 0 18px #ff9b21;animation:twinkle 2.4s infinite alternate}.s1{top:14%;left:18%}.s2{top:26%;right:12%;animation-delay:.8s}.s3{bottom:18%;left:13%;animation-delay:1.3s}.s4{bottom:25%;right:16%;animation-delay:.4s}
+@keyframes float{50%{transform:translateY(-9px)}}@keyframes twinkle{to{opacity:.25;transform:scale(.7)}}
+.booking{position:relative;z-index:3;border:1px solid #d99d37;border-radius:20px;padding:24px 20px 20px;background:linear-gradient(155deg,#1d1009f2,#090605f5);box-shadow:0 0 0 5px #f3b43a16,0 18px 60px #000a,0 0 35px #f2a52b22;margin-top:18px}.booking:before{content:"✥";position:absolute;top:-18px;left:calc(50% - 22px);width:44px;height:36px;background:#170c07;border:1px solid #d99d37;border-radius:50% 50% 0 0;color:var(--gold);display:grid;place-items:center;font-size:22px}.booking h2{text-align:center;color:var(--gold2);font-size:27px;margin:5px 0 20px}.field{margin:11px 0}.field label{display:block;font-size:12px;color:#d6bd96;margin:0 0 6px}.field input,.field select,.field textarea{width:100%;background:#100a07;border:1px solid #5a4025;border-radius:10px;padding:12px;color:#fff0d4;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px #e9a83222}.field select option{background:#160d08}.booking .btn{width:100%;margin-top:10px;font-size:16px}
+.booking-note{text-align:center;color:#c7aa7d;font-size:11px;margin:12px 0 0}
+.section{position:relative;z-index:1;padding:36px clamp(20px,7vw,110px) 80px;background:linear-gradient(180deg,transparent,#0c0705 18%)}.section-heading{text-align:center;margin:0 auto 25px}.ornament{color:var(--gold);font-size:22px;letter-spacing:12px}.section-heading h2{font-size:29px;color:#ffdf92;margin:3px 0 8px}.section-heading p{color:#cbb89b;font-size:14px;margin:0}
+.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:950px;margin:0 auto}.service-card{border:1px solid #a8752a;border-radius:16px;overflow:hidden;background:#170d08;box-shadow:0 12px 30px #0005;display:flex;min-height:170px}.service-art{width:42%;min-height:170px;display:grid;place-items:center;font-size:56px;background:radial-gradient(circle at 50% 35%,#b95b22,#40140d 64%,#160906);position:relative}.service-art:after{content:"";position:absolute;inset:8px;border:1px solid #ffcf6a55;border-radius:9px}.service-info{padding:18px 14px;display:flex;flex-direction:column;justify-content:center}.service-info h3{font-size:17px;color:#ffdf98;margin:0 0 7px}.service-info p{font-size:12px;color:#c9b493;line-height:1.6;margin:0 0 10px}.service-info a{font-size:13px;color:var(--gold);font-weight:700}
+.about{max-width:950px;margin:58px auto 0;border-top:1px solid #65451e;padding:35px 10px 0;display:grid;grid-template-columns:1fr 1fr;gap:30px}.about h2{font-size:25px;color:#ffdf92;margin:0 0 10px}.about p{font-size:14px;line-height:1.9;color:#cdb99a}.about-box{border:1px solid #795321;border-radius:14px;padding:22px;background:linear-gradient(130deg,#211109,#100906)}.about-box strong{color:var(--gold2);font-size:26px;display:block;margin-bottom:6px}.footer{border-top:1px solid #503719;padding:24px;text-align:center;color:#b69a70;font-size:12px;background:#090605}
+.modal{position:fixed;inset:0;background:#000b;display:none;place-items:center;padding:18px;z-index:20}.modal.open{display:grid}.modal-card{width:min(100%,520px);max-height:90vh;overflow:auto;border:1px solid #d99d37;border-radius:18px;background:#160d08;padding:25px;box-shadow:0 20px 80px #000}.modal-head{display:flex;justify-content:space-between;align-items:center}.modal-head h2{color:var(--gold2);margin:0 0 15px}.close{background:none;border:0;color:#f5dba9;font-size:26px;cursor:pointer}.notice{font-size:12px;color:#c9b493;line-height:1.7}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#f5c65d;color:#241306;padding:12px 18px;border-radius:30px;font-size:13px;z-index:30;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:1050px){.hero{grid-template-columns:1fr 1fr;}.art{position:absolute;right:23%;top:20px;width:48%;opacity:.52;z-index:0}.hero-copy{z-index:2}.booking{grid-column:2;max-width:360px;justify-self:end}.nav{gap:18px}.service-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.topbar{height:75px;padding:0 17px}.brand-mark{width:48px;height:48px;font-size:28px}.brand-name{font-size:24px}.brand-tag{font-size:9px;letter-spacing:1px}.nav{display:none}.nav-cta{font-size:12px;padding:9px 13px}.hero{display:flex;flex-direction:column;align-items:stretch;padding:30px 20px 0;gap:0}.hero-copy{padding-bottom:0}.art{position:absolute;right:-28px;top:100px;width:75%;height:360px;opacity:.27}.halo{width:310px}.mandala{width:340px}.ganesh{width:285px}h1{font-size:48px;max-width:450px;margin-top:20px}.sub{font-size:15px;max-width:340px}.trust{gap:9px;justify-content:space-between;margin:23px 0}.trust-item{width:76px;font-size:10px}.trust-icon{width:39px;height:39px}.actions .btn{padding:12px 18px;font-size:13px}.booking{width:100%;max-width:none;margin:32px 0 0;align-self:stretch}.section{padding:35px 18px 60px}.service-grid{grid-template-columns:1fr}.service-card{min-height:135px}.service-art{min-height:135px}.about{grid-template-columns:1fr;margin-top:40px}.section-heading h2{font-size:25px}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="topbar">
+<a class="brand" href="#home"><div class="brand-mark">ॐ</div><div><div class="brand-name">पूजनसेवा</div><div class="brand-tag">भक्ति • श्रद्धा • सेवा</div></div></a>
+<nav class="nav"><a class="active" href="#home">⌂ &nbsp;मुख्य पृष्ठ</a><a href="#puja">हमारी पूजा</a><a href="#about">परिचय</a><a href="#contact">संपर्क</a></nav>
+<a class="nav-cta" href="#booking">पूजा बुक करें&nbsp; ↗</a>
+</header>
+<main id="home">
+<section class="hero">
+<div class="hero-copy">
+<div class="eyebrow"><span>🪷</span> ऑनलाइन पूजा बुकिंग</div>
+<h1>अपने घर पर कराएँ<em>पूजा एवं पाठ</em></h1>
+<p class="sub">वैदिक विधि-विधान से पूजा, श्रद्धा और समर्पण के साथ। अपने शुभ अवसर के लिए आज ही अनुरोध भेजें।</p>
+<div class="trust">
+<div class="trust-item"><div class="trust-icon">♢</div>वैदिक<br>विधान</div>
+<div class="trust-item"><div class="trust-icon">✦</div>सरल<br>बुकिंग</div>
+<div class="trust-item"><div class="trust-icon">♙</div>विश्वसनीय<br>सेवा</div>
+<div class="trust-item"><div class="trust-icon">♡</div>श्रद्धा और<br>समर्पण</div>
+</div>
+<div class="actions"><a class="btn btn-gold" href="#booking">बुकिंग करें &nbsp; →</a><a class="btn btn-outline" href="#about">हमारे बारे में</a></div>
+</div>
+<div class="art" aria-label="श्री गणेश का प्रतीकात्मक चित्र">
+<div class="halo"></div><div class="mandala"></div><span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span><span class="spark s4">✧</span>
+<svg class="ganesh" viewBox="0 0 420 500" role="img" aria-label="श्री गणेश">
+<defs><linearGradient id="gold" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff1a5"/><stop offset=".45" stop-color="#e99b25"/><stop offset="1" stop-color="#7e310b"/></linearGradient><linearGradient id="skin" x1="0" x2="1"><stop stop-color="#ffbd86"/><stop offset=".5" stop-color="#e87543"/><stop offset="1" stop-color="#a83d26"/></linearGradient><linearGradient id="cloth" x1="0" x2="1"><stop stop-color="#ffcf39"/><stop offset="1" stop-color="#b52218"/></linearGradient></defs>
+<ellipse cx="210" cy="458" rx="145" ry="22" fill="#2a0c05" opacity=".65"/>
+<path d="M85 390 Q40 340 73 270 L120 248 L165 294 L255 294 L300 248 L347 270 Q380 340 335 390Z" fill="#9b3218" stroke="url(#gold)" stroke-width="8"/>
+<path d="M100 365 Q210 310 320 365 L350 425 Q210 470 70 425Z" fill="url(#cloth)" stroke="#f6c95c" stroke-width="6"/>
+<path d="M120 400 Q210 370 300 400" fill="none" stroke="#ffe48c" stroke-width="8"/>
+<path d="M125 185 Q55 120 65 220 Q70 295 150 275Z" fill="url(#skin)" stroke="url(#gold)" stroke-width="8"/>
+<path d="M295 185 Q365 120 355 220 Q350 295 270 275Z" fill="url(#skin)" stroke="url(#gold)" stroke-width="8"/>
+<path d="M135 150 Q135 75 210 70 Q285 75 285 150 L270 265 Q245 310 210 315 Q175 310 150 265Z" fill="url(#skin)" stroke="url(#gold)" stroke-width="7"/>
+<path d="M184 182 Q210 165 236 182 Q228 205 210 205 Q192 205 184 182Z" fill="#fff0c8"/>
+<ellipse cx="174" cy="181" rx="8" ry="12" fill="#301008"/><ellipse cx="246" cy="181" rx="8" ry="12" fill="#301008"/>
+<path d="M210 195 Q190 225 202 260 Q211 283 231 264 Q246 249 230 230 Q218 216 226 204" fill="none" stroke="#f6b17c" stroke-width="18" stroke-linecap="round"/>
+<path d="M194 141 Q210 120 226 141" fill="none" stroke="#9a1e17" stroke-width="8"/>
+<path d="M155 120 L210 25 L265 120Z" fill="url(#gold)" stroke="#ffdf7e" stroke-width="7"/>
+<path d="M170 105 L210 49 L250 105Z" fill="#a52b18" stroke="#ffdf7e" stroke-width="4"/>
+<circle cx="210" cy="86" r="12" fill="#f8d46c" stroke="#fff0b5" stroke-width="4"/>
+<path d="M160 290 Q110 275 95 320 Q125 340 170 325" fill="url(#gold)" stroke="#ffdc7c" stroke-width="6"/>
+<path d="M260 290 Q310 275 325 320 Q295 340 250 325" fill="url(#gold)" stroke="#ffdc7c" stroke-width="6"/>
+<path d="M170 320 Q210 340 250 320 L270 375 Q210 400 150 375Z" fill="#9b2017" stroke="url(#gold)" stroke-width="6"/>
+<path d="M190 345 Q210 360 230 345" fill="none" stroke="#ffdf83" stroke-width="5"/>
+<g fill="url(#gold)" stroke="#ffdf83" stroke-width="3"><circle cx="150" cy="255" r="10"/><circle cx="270" cy="255" r="10"/><circle cx="175" cy="305" r="8"/><circle cx="245" cy="305" r="8"/><path d="M210 5 l8 16 -8 16 -8-16Z"/></g>
+<path d="M120 220 Q100 200 95 180 M300 220 Q320 200 325 180" stroke="#ffe08a" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>
+</div>
+<aside class="booking" id="booking">
+<h2>शीघ्र बुकिंग</h2>
+<form id="quickForm">
+<div class="field"><label for="quickPuja">पूजा का चयन करें</label><select id="quickPuja" required><option value="श्री सत्यनारायण कथा एवं पूजा">श्री सत्यनारायण कथा एवं पूजा</option></select></div>
+<div class="field"><label for="quickDate">पूजा की तिथि</label><input id="quickDate" type="date" required></div>
+<div class="field"><label for="quickTime">अनुकूल समय</label><select id="quickTime" required><option value="">समय चुनें</option><option>प्रातःकाल (सुबह 6–10 बजे)</option><option>मध्याह्न (सुबह 10–दोपहर 2 बजे)</option><option>सायंकाल (शाम 4–8 बजे)</option></select></div>
+<button class="btn btn-gold" type="submit">आगे बढ़ें &nbsp; →</button>
+<p class="booking-note">तिथि एवं समय की पुष्टि संपर्क के बाद होगी।</p>
+</form>
+</aside>
+</section>
+<section class="section" id="puja">
+<div class="section-heading"><div class="ornament">──── ❀ ────</div><h2>हमारी पूजा सेवा</h2><p>आपके शुभ अवसर के लिए श्रद्धापूर्वक वैदिक पूजा</p></div>
+<div class="service-grid">
+<article class="service-card"><div class="service-art">🪔</div><div class="service-info"><h3>श्री सत्यनारायण कथा एवं पूजा</h3><p>पूर्ण श्रद्धा एवं वैदिक विधि से कथा और पूजन।</p><a href="#booking">बुकिंग करें →</a></div></article>
+</div>
+<div class="about" id="about">
+<div><h2>भक्ति • श्रद्धा • सेवा</h2><p>पूजनसेवा का उद्देश्य आपके घर एवं शुभ अवसरों पर वैदिक परंपराओं के अनुसार पूजा-अर्चना का अनुरोध सरल बनाना है। प्रत्येक बुकिंग की तिथि, समय और स्थान की पुष्टि व्यक्तिगत संपर्क के बाद की जाएगी।</p></div>
+<div class="about-box"><strong>₹2,100</strong><span>श्री सत्यनारायण कथा एवं पूजा का निर्धारित शुल्क</span><p>पूजा सामग्री इस शुल्क में सम्मिलित नहीं है। यात्रा एवं स्थान की उपलब्धता के अनुसार बुकिंग की पुष्टि की जाएगी।</p></div>
+</div>
+</section>
+</main>
+<footer class="footer" id="contact">ॐ सर्वे भवन्तु सुखिनः । &nbsp; | &nbsp; पूजनसेवा © <span id="year"></span><br><span>बुकिंग की पुष्टि तिथि, समय एवं स्थान की उपलब्धता पर निर्भर है।</span></footer>
+</div>
+<div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card">
+<div class="modal-head"><h2 id="modalTitle">पूजा बुकिंग विवरण</h2><button class="close" id="closeModal" aria-label="बंद करें">×</button></div>
+<form id="fullForm">
+<div class="field"><label for="fullName">पूरा नाम</label><input id="fullName" required maxlength="80" placeholder="अपना नाम लिखें"></div>
+<div class="field"><label for="mobile">मोबाइल नंबर</label><input id="mobile" required inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10 अंकों का मोबाइल नंबर"></div>
+<div class="field"><label for="fullDate">पूजा की तिथि</label><input id="fullDate" type="date" required></div>
+<div class="field"><label for="fullTime">अनुकूल समय</label><input id="fullTime" required placeholder="जैसे सुबह 10 बजे"></div>
+<div class="field"><label for="address">पूरा पता</label><textarea id="address" rows="3" required placeholder="मकान/क्षेत्र, शहर, राज्य और पिन कोड"></textarea></div>
+<div class="field"><label for="requirements">अन्य जानकारी (वैकल्पिक)</label><textarea id="requirements" rows="2" placeholder="कोई विशेष अनुरोध"></textarea></div>
+<p class="notice">पूजा शुल्क ₹2,100 है। अनुरोध भेजने के बाद पंडित जी तिथि, समय और यात्रा की उपलब्धता की पुष्टि करेंगे। यह फॉर्म अभी अनुरोध तैयार करता है; ऑनलाइन भुगतान या स्वतः बुकिंग-पुष्टि सक्रिय नहीं है।</p>
+<button class="btn btn-gold" type="submit" style="width:100%">बुकिंग अनुरोध तैयार करें</button>
+</form><div id="result" class="notice" hidden></div>
+</div></div><div class="toast" id="toast"></div>
+<script>
+const WHATSAPP_NUMBER = ""; // Add the verified WhatsApp number with country code (91...)
+const $=id=>document.getElementById(id);
+const today=new Date();const minDate=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
+$('quickDate').min=minDate;$('fullDate').min=minDate;$('year').textContent=new Date().getFullYear();
+function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),3300)}
+function openModal(date='',time=''){ $('bookingModal').classList.add('open');if(date)$('fullDate').value=date;if(time)$('fullTime').value=time; }
+$('quickForm').addEventListener('submit',e=>{e.preventDefault();openModal($('quickDate').value,$('quickTime').value)});
+$('closeModal').addEventListener('click',()=>$('bookingModal').classList.remove('open'));
+$('bookingModal').addEventListener('click',e=>{if(e.target===$('bookingModal'))$('bookingModal').classList.remove('open')});
+$('fullForm').addEventListener('submit',async e=>{
+ e.preventDefault();
+ const mobile=$('mobile').value.trim();if(!/^[6-9][0-9]{9}$/.test(mobile)){toast('कृपया सही 10 अंकों का मोबाइल नंबर लिखें।');return}
+ const data={सेवा:'श्री सत्यनारायण कथा एवं पूजा',नाम:$('fullName').value.trim(),मोबाइल:mobile,तिथि:$('fullDate').value,समय:$('fullTime').value,पता:$('address').value.trim(),अन्य_जानकारी:$('requirements').value.trim(),शुल्क:'₹2,100'};
+ const message='पूजा बुकिंग अनुरोध\n'+Object.entries(data).map(([k,v])=>k+': '+v).join('\n');
+ if(WHATSAPP_NUMBER){
+  window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(message),'_blank','noopener');
+  $('result').hidden=false;$('result').textContent='आपका अनुरोध WhatsApp में तैयार है। कृपया संदेश भेजें।';
+ }else{
+  try{await navigator.clipboard.writeText(message);$('result').hidden=false;$('result').innerHTML='आपका बुकिंग विवरण कॉपी हो गया है। वास्तविक अनुरोध भेजने के लिए वेबसाइट के संचालक से संपर्क करें। WhatsApp नंबर अभी वेबसाइट में कॉन्फ़िगर नहीं है।';toast('बुकिंग विवरण कॉपी हो गया।')}
+  catch{ $('result').hidden=false;$('result').textContent=message; }
+ }
+});
+</script>
+</body></html>
